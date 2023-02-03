@@ -47,7 +47,6 @@ const Register = () => {
                 type: "custom",
                 message: authInfo.fieldError?.message,
             });
-            setValidCaptcha(false);
         }
     }, [authInfo.fieldError, setError]);
 
