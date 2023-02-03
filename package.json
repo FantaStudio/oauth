@@ -1,0 +1,22 @@
+{
+    "name": "oauth",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server_install": "npm install --prefix auth-backend",
+        "client_install": "npm install --prefix auth-frontend",
+        "server": "npm run start --prefix auth-backend",
+        "client": "npm run start --prefix auth-frontend",
+        "install": "concurrently \"npm run server_install\" \"npm run client_install\"",
+        "start": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "concurrently": "^7.6.0",
+        "yup": "^0.32.11"
+    }
+}

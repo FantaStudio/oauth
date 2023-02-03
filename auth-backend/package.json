@@ -1,0 +1,21 @@
+{
+    "name": "auth-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js --experimental-json-modules"
+    },
+    "keywords": [],
+    "author": "",
+    "type": "module",
+    "license": "ISC",
+    "devDependencies": {
+        "json-server": "^0.17.1"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "jsonwebtoken": "^9.0.0",
+        "oauth": "file:.."
+    }
+}
